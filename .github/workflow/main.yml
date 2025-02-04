@@ -21,6 +21,14 @@ on:
       run: whoami
       shell: bash
 
+    - name: "checkout"
+      uses: action/checkout@v3
+
+    - name: "run the script"
+      run: |
+        chmod +x script.sh
+        ./script.sh
+
 
             
 
