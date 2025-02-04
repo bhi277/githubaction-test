@@ -1,0 +1,26 @@
+---
+
+name: "Its testing github_action"
+
+on:
+  push:
+    branches:
+      - master
+
+  jobs:
+    runs-on: ubuntu:latest
+
+
+    steps:
+    
+    - name: "show the memory"
+      run: free -h
+      shell: bash
+
+    - name: "whoami"
+      run: whoami
+      shell: bash
+
+
+            
+
